@@ -742,7 +742,7 @@ void task_print_power(void){
     
     
     if (ina219_read_all(&bus_mv, &cur_mA, &p_mW)) {
-        // 1) Higher-resolution power (mW) from V×I
+        // 1) Higher-resolution power (mW) from VÃ—I
         uint32_t p_calc_mW = ((uint32_t)bus_mv * (uint32_t)(cur_mA >= 0 ? cur_mA : -cur_mA)) / 1000u;
 
         // 2) Print both
@@ -951,7 +951,7 @@ static void cli_exec(const char *line){
 void cli_service(void){
     if(!cli_ready)return;
     
-  // IEC1bits.U2RXIE = 0;      // guard the copy
+    IEC1bits.U2RXIE = 0;      // guard the copy
     char line[CLI_Q_BUF];
     
     uint8_t n = cli_len;
@@ -963,7 +963,7 @@ void cli_service(void){
     line[n] = '\0';
     
     cli_clear();
-  //  IEC1bits.U2RXIE = 1; 
+    IEC1bits.U2RXIE = 1; 
     cli_exec(line);
     
 }
@@ -987,5 +987,6 @@ void schedulerRun(void){
         }
     }
 }
+
 
 
