@@ -54,21 +54,32 @@ The runtime combines four main blocks:
 ---
 ## 📂 Repository Layout
 ```
-├─ src/                      # all .c/.h files
-│  ├─ main.c
-│  ├─ scheduler.c
-│  ├─ scheduler.h
-│  ├─ ina219.c
-│  ├─ ina219.h
-│  ├─ button.c
-│  ├─ button.h
-│  ├─ trace.c
-│  └─ trace.h
-├─ docs/                     # paper + system_flow_chart
-│  ├─ PowerAwareScheduler_PIC24_Dissertation.pdf
-│  ├─ System_Architecture.pdf
-├─ README.md
-└─ .gitignore
+├── src/                                           # all source code (.c/.h)
+│ ├── main.c
+│ ├── scheduler.c
+│ ├── scheduler.h
+│ ├── ina219.c
+│ ├── ina219.h
+│ ├── button.c
+│ ├── button.h
+│ ├── trace.c
+│ └── trace.h
+├── docs/                                          # documents + diagrams + results
+│ ├── PowerAwareScheduler_PIC24_Dissertation.pdf
+│ ├── Reflective_Essay.pdf
+│ ├── Presentation_Slides.pdf
+│ ├── block-diagram.png
+│ └── results/
+│       ├── LED0_500_Scope.jpeg
+│       ├── LED1_333_Scope.jpeg
+│       ├── Power_Latency_Scope.jpeg
+│       ├── Power_UART_CLI.png
+│       ├── Scheduler_busy_Scope.jpeg
+│       └── Sleep_2s_gap.jpeg
+├── README.md
+└── .gitignore
+
+If any filenames differ, just tweak them in this block and you’re set.
 ```
 
 ---
