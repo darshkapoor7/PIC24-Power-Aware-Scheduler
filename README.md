@@ -66,9 +66,7 @@ The runtime combines four main blocks:
 │ └── trace.h
 ├── docs/                                          # documents + diagrams + results
 │ ├── PowerAwareScheduler_PIC24_Dissertation.pdf
-│ ├── Reflective_Essay.pdf
-│ ├── Presentation_Slides.pdf
-│ ├── block-diagram.png
+│ ├── System_Architecture.pdf
 │ └── results/
 │       ├── LED0_500_Scope.jpeg
 │       ├── LED1_333_Scope.jpeg
@@ -143,5 +141,6 @@ Absolute next-release scheduling (reduce phase drift)
 Tickless ACTIVE mode + auto-sleep heuristics
 
 More accurate power measurement (quiet sampling, averaging)
+
 Extended CLI: priorities, deadlines, preemption toggle
 
