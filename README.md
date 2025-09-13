@@ -78,10 +78,7 @@ The runtime combines four main blocks:
 │       └── Sleep_2s_gap.jpeg
 ├── README.md
 └── .gitignore
-
-If any filenames differ, just tweak them in this block and you’re set.
 ```
-
 ---
 ## 🛠️ Build & Setup
 
