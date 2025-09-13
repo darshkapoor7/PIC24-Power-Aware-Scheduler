@@ -54,12 +54,21 @@ The runtime combines four main blocks:
 ---
 ## 📂 Repository Layout
 ```
-├── button.c/.h # Button ISR and IOC handling (S1/S2)
-├── ina219.c/.h # INA219 driver: config, calibration, conversions
-├── scheduler.c/.h # Cooperative scheduler, CLI, UART2 helpers
-├── trace.c/.h # Trace pin toggles for latency/timing
-├── main.c # System initialization and run loop
-└── README.md
+├─ src/                      # all .c/.h files
+│  ├─ main.c
+│  ├─ scheduler.c
+│  ├─ scheduler.h
+│  ├─ ina219.c
+│  ├─ ina219.h
+│  ├─ button.c
+│  ├─ button.h
+│  ├─ trace.c
+│  └─ trace.h
+├─ docs/                     # paper + system_flow_chart
+│  ├─ PowerAwareScheduler_PIC24_Dissertation.pdf
+│  ├─ System_Architecture.pdf
+├─ README.md
+└─ .gitignore
 ```
 
 ---
