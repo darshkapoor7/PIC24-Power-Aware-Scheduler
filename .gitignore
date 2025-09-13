@@ -1,0 +1,25 @@
+# MPLAB X build artifacts
+build/
+dist/
+
+# MPLAB X per-user settings
+nbproject/private/
+
+# Toolchain outputs (just in case)
+*.o
+*.elf
+*.map
+*.hex
+*.cof
+*.d
+*.lst
+
+# OS / editor clutter
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+*.log
+*.tmp
