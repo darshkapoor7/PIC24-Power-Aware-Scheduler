@@ -86,7 +86,7 @@ typedef struct {
 #define BAUDRATE        115200
 #define FCY             4000000UL
 #define XTAL_FREQ       8000000UL
-#define IDLE_TICK_HZ    1u   // Timer1 in IDLE: 10 Hz => step every 100 ms
+#define IDLE_TICK_HZ    1u   // Timer1 in IDLE: 1 Hz => step every 1000 ms
 #define SPOR_Q_SIZE     32  
 #define U2TX_Q_SIZE     64
 #define CLI_Q_BUF       64
@@ -121,5 +121,6 @@ void cli_init(void);
 void cli_service(void); 
 void request_idle_oneshot(void (*fn)(void), uint16_t ms);
 bool run_idle_oneshot_if_pending(void);
+
 
 #endif
